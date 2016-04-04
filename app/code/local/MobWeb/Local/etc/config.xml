@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <MobWeb_Local>
+            <version>0.0.1</version>
+        </MobWeb_Local>
+    </modules>
+    <global>
+        <helpers>
+            <mobweb_local>
+                <class>MobWeb_Local_Helper</class>
+            </mobweb_local>
+        </helpers>
+    </global>
+</config>
