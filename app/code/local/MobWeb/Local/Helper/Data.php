@@ -7,7 +7,7 @@ class MobWeb_Local_Helper_Data extends Mage_Core_Helper_Abstract {
         // Match the base URL against known strings indicating a certain development environment
         $baseUrl = Mage::getBaseUrl();
 
-        if((strpos($baseUrl, '.local') !==  false) (strpos($baseUrl, '.dev') !==  false) || (strpos($baseUrl, 'development') !==  false)) {
+        if((strpos($baseUrl, '.local') !==  false) || (strpos($baseUrl, '.dev') !==  false) || (strpos($baseUrl, 'development') !==  false)) {
             return 'development';
         }
 
