@@ -11,7 +11,7 @@ class MobWeb_Local_Helper_Data extends Mage_Core_Helper_Abstract {
             return 'development';
         }
 
-        if(strpos($baseUrl, 'staging') !==  false) {
+        if((strpos($baseUrl, 'staging') !==  false) || (strpos($baseUrl, '.maxcluster.net') !==  false)) {
             return 'staging';
         }
 
